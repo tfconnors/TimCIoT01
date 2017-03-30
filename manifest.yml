@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: TimCIoT01
+  host: TimCIoT
+  disk_quota: 1024M
+  services:
+  - TimCIoT01-cloudantNoSQLDB
+  - TimCIoT01-iotf-service
+  env:
+    NODE_RED_USERNAME: TimCIoT
+    'NODE_RED_PASSWORD ': yankeefan
